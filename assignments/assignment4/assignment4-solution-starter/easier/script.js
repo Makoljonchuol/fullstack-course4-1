@@ -36,7 +36,17 @@ WARNING!!! WARNING!!!
 (function () {
 
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+var helloSpeaker = {
+  speak: function (name) {
+    console.log("Hello " + name);
+  }
+};
 
+var byeSpeaker = {
+  speak: function (name) {
+    console.log("Good Bye " + name);
+  }
+};
 // STEP 10: (NOTHING TO DO. ALREADY DONE FOR YOU)
 // Loop over the names array and say either 'Hello' or "Good Bye"
 // using either the helloSpeaker's or byeSpeaker's 'speak' method.
@@ -52,6 +62,7 @@ for (var i = 0; i < names.length; i++) {
   // Look up these methods on Mozilla Developer Network web site if needed.
   var firstLetter = names[i].charAt(0).toLowerCase();
 
+
   // STEP 12: (NOTHING TO DO. ALREADY DONE FOR YOU)
   // Compare the 'firstLetter' retrieved in STEP 11 to lower case
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
@@ -62,6 +73,8 @@ for (var i = 0; i < names.length; i++) {
   } else {
     helloSpeaker.speak(names[i]);
   }
+ helloSpeaker.speak(names[i]);
 }
+
 
 })();
