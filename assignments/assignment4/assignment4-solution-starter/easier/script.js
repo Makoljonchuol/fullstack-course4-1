@@ -70,10 +70,9 @@ for (var i = 0; i < names.length; i++) {
   // name in the loop.
   if (firstLetter === 'j') {
     byeSpeaker.speak(names[i]);
-  } else {
-    helloSpeaker.speak(names[i]);
-  }
- helloSpeaker.speak(names[i]);
+} else {
+  helloSpeaker.speak(names[i]);
+}
 }
 
 
